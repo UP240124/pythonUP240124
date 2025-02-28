@@ -1,0 +1,11 @@
+firstname = "Benjamin"
+lastname = "Gonzalez"
+fullname = "Benjamin Gonzalez Marin"
+country = "Mexico"
+city = "Aguascalientes"
+age ="18"
+year ="2024"
+is_married = True
+is_true = 1
+is_light_on = 123
+a,b,c,d = 1,2,3,4 
