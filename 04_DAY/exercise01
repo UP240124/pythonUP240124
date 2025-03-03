@@ -1,0 +1,25 @@
+th = "thirty"
+d = "days"
+o = "of"
+p = "python"
+space = " "
+sentence = th + space + d + space + o + space + p
+print(sentence)
+
+co = "coding"
+f = "for"
+a = "all"
+sentence1 = co + space + f + space + a
+print(sentence1)
+
+company =  "Coding For All"
+
+print(company)
+
+print(len(company))
+
+upper = "minuscula"
+print(upper.swapcase())
+
+lower = "MAYUSCULA"
+print(lower.swapcase())
