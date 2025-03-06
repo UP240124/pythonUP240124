@@ -23,3 +23,53 @@ print(upper.swapcase())
 
 lower = "MAYUSCULA"
 print(lower.swapcase())
+
+challenge = 'coding for all'
+print(challenge.capitalize())
+print(challenge.title())
+print(challenge.swapcase())
+
+print(company[0:6])
+
+print("Coding" in company)
+
+print(company.replace("Coding", "Python"))
+
+python = "Python For Everyone"
+print(python.replace("everyone" , "all"))
+
+print(company.split())
+
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(", "))
+
+print("Coding for all"[0])
+
+last_index = len("Coding For All")-1
+last_letter = "Codign for all"[last_index]
+print(last_index)
+print(last_letter)
+
+print("Coding for all"[10])
+
+sentence_3 = "Python For Everyone"
+abreviacion = ""
+for letter in sentence_3:
+    if (letter.isupper())== True:
+        abreviacion += letter
+print(abreviacion)
+
+sentence_4 = "Coding For All"
+abreviacion1 = ""
+for letter in sentence_4:
+    if (letter.isupper())== True:
+        abreviacion1 += letter
+print(abreviacion1)
+
+print(company.find("C"))
+
+print(company.find("F"))
+
+print(company.rfind("i"))
+
+print('You cannot end a sentence with because because because is a conjunction'.find("because"))
+
