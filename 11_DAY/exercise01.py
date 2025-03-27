@@ -46,15 +46,12 @@ def check_season(month):
     print(check_season(4)) 
 check_season(month)
 #6
-def solve_quadratic_eqn():
-    a = int(input("Enter a value :"))
-    b = int(input("Enter a value :"))
-    c = int(input("Enter a value :"))
-    discriminant = b**2 - 4*a*c
-    sol1 = (-b + math.sqrt(discriminant)) / (2*a)
-    sol2 = (-b - math.sqrt(discriminant)) / (2*a)
-    print(f"Sol1 = {sol1} and sol2 = {sol2}")
-solve_quadratic_eqn()
+def solve_quadratic_eqn(a,b,c):
+     D = b * b - 4 * a * c
+     X1 = (-b + D) / (2 * a)
+     return X1
+
+print(solve_quadratic_eqn(8,4,6))
 #7
 def calculate_slope(x1, y1, x2, y2):
 
@@ -72,3 +69,53 @@ def print_list(lst):
         print(item)
 my_list = [1, 2, 3, 4, 5]
 print_list(my_list)
+#9
+def reverse_list(arr):
+    reversed_arr = []
+    for i in range(len(arr) - 1, -1, -1):
+        reversed_arr.append(arr[i])
+    return reversed_arr
+print(reverse_list([1, 2, 3, 4, 5]))
+#10
+def capitalize_list_items():
+    lista=[]
+    lista.append(input("Inserte a la lista: "))
+    print(lista.capitalize())
+capitalize_list_items
+
+#11
+def add_item(mutable, tba):
+    mutable.append(tba)
+    return mutable
+
+
+# 12
+def remove_item(mutable, tbr):
+    mutable.remove(tbr)
+    return mutable
+
+
+# 13
+def sum_of_numbers(high):
+    sum_of_numbers = 0
+    for i in range(high + 1):
+        sum_of_numbers += i
+    return sum_of_numbers
+
+
+# 14
+def sum_of_odds(high):
+    sum_of_odd_nums = 0
+    for i in range(high + 1):
+        if i % 2 == 1:
+            sum_of_odd_nums += i
+    return sum_of_odd_nums
+
+
+# 15
+def sum_of_even(high):
+    sum_of_even_nums = 0
+    for i in range(high + 1):
+        if i % 2 == 0:
+            sum_of_even_nums += i
+    return sum_of_even_nums

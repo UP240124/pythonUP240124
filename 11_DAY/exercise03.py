@@ -1,211 +1,57 @@
-countries = [
-  'Afghanistan',
-  'Albania',
-  'Algeria',
-  'Andorra',
-  'Angola',
-  'Antigua and Barbuda',
-  'Argentina',
-  'Armenia',
-  'Australia',
-  'Austria',
-  'Azerbaijan',
-  'Bahamas',
-  'Bahrain',
-  'Bangladesh',
-  'Barbados',
-  'Belarus',
-  'Belgium',
-  'Belize',
-  'Benin',
-  'Bhutan',
-  'Bolivia',
-  'Bosnia and Herzegovina',
-  'Botswana',
-  'Brazil',
-  'Brunei',
-  'Bulgaria',
-  'Burkina Faso',
-  'Burundi',
-  'Cambodia',
-  'Cameroon',
-  'Canada',
-  'Cape Verde',
-  'Central African Republic',
-  'Chad',
-  'Chile',
-  'China',
-  'Colombi',
-  'Comoros',
-  'Congo (Brazzaville)',
-  'Congo',
-  'Costa Rica',
-  "Cote d'Ivoire",
-  'Croatia',
-  'Cuba',
-  'Cyprus',
-  'Czech Republic',
-  'Denmark',
-  'Djibouti',
-  'Dominica',
-  'Dominican Republic',
-  'East Timor (Timor Timur)',
-  'Ecuador',
-  'Egypt',
-  'El Salvador',
-  'Equatorial Guinea',
-  'Eritrea',
-  'Estonia',
-  'Ethiopia',
-  'Fiji',
-  'Finland',
-  'France',
-  'Gabon',
-  'Gambia, The',
-  'Georgia',
-  'Germany',
-  'Ghana',
-  'Greece',
-  'Grenada',
-  'Guatemala',
-  'Guinea',
-  'Guinea-Bissau',
-  'Guyana',
-  'Haiti',
-  'Honduras',
-  'Hungary',
-  'Iceland',
-  'India',
-  'Indonesia',
-  'Iran',
-  'Iraq',
-  'Ireland',
-  'Israel',
-  'Italy',
-  'Jamaica',
-  'Japan',
-  'Jordan',
-  'Kazakhstan',
-  'Kenya',
-  'Kiribati',
-  'Korea, North',
-  'Korea, South',
-  'Kuwait',
-  'Kyrgyzstan',
-  'Laos',
-  'Latvia',
-  'Lebanon',
-  'Lesotho',
-  'Liberia',
-  'Libya',
-  'Liechtenstein',
-  'Lithuania',
-  'Luxembourg',
-  'Macedonia',
-  'Madagascar',
-  'Malawi',
-  'Malaysia',
-  'Maldives',
-  'Mali',
-  'Malta',
-  'Marshall Islands',
-  'Mauritania',
-  'Mauritius',
-  'Mexico',
-  'Micronesia',
-  'Moldova',
-  'Monaco',
-  'Mongolia',
-  'Morocco',
-  'Mozambique',
-  'Myanmar',
-  'Namibia',
-  'Nauru',
-  'Nepal',
-  'Netherlands',
-  'New Zealand',
-  'Nicaragua',
-  'Niger',
-  'Nigeria',
-  'Norway',
-  'Oman',
-  'Pakistan',
-  'Palau',
-  'Panama',
-  'Papua New Guinea',
-  'Paraguay',
-  'Peru',
-  'Philippines',
-  'Poland',
-  'Portugal',
-  'Qatar',
-  'Romania',
-  'Russia',
-  'Rwanda',
-  'Saint Kitts and Nevis',
-  'Saint Lucia',
-  'Saint Vincent',
-  'Samoa',
-  'San Marino',
-  'Sao Tome and Principe',
-  'Saudi Arabia',
-  'Senegal',
-  'Serbia and Montenegro',
-  'Seychelles',
-  'Sierra Leone',
-  'Singapore',
-  'Slovakia',
-  'Slovenia',
-  'Solomon Islands',
-  'Somalia',
-  'South Africa',
-  'Spain',
-  'Sri Lanka',
-  'Sudan',
-  'Suriname',
-  'Swaziland',
-  'Sweden',
-  'Switzerland',
-  'Syria',
-  'Taiwan',
-  'Tajikistan',
-  'Tanzania',
-  'Thailand',
-  'Togo',
-  'Tonga',
-  'Trinidad and Tobago',
-  'Tunisia',
-  'Turkey',
-  'Turkmenistan',
-  'Tuvalu',
-  'Uganda',
-  'Ukraine',
-  'United Arab Emirates',
-  'United Kingdom',
-  'United States',
-  'Uruguay',
-  'Uzbekistan',
-  'Vanuatu',
-  'Vatican City',
-  'Venezuela',
-  'Vietnam',
-  'Yemen',
-  'Zambia',
-  'Zimbabwe',
-];
-for countries in countries:
-    if "land" in countries:
-        print(countries)
-#2
-fruits = ['banana', 'orange', 'mango', 'lemon']
-reversed_fruits = []
-for i in range(len(fruits)-1, -1, -1):  
-    reversed_fruits.append(fruits[i])  
-print(reversed_fruits)
-#3
-languages_st = set()
-languesges_lst = []
-countires_data = [
+#Punto 1
+def is_prime(number):
+    if number/number==1:
+        if number/2==1:
+            print("Si es primo")
+        elif number/3==1:
+            print("Si es primo")
+        elif number/5==1:
+            print("Si es primo")
+        elif number/7==1:
+            print("Si es primo")
+        elif number/11==1:
+            print("Si es primo")
+    else:
+        print("No es primo")
+print(is_prime(11))
+
+#Punto 2
+numbers = [2, 3, 7, 9]
+def check_list(test_list):
+    return len(set(test_list)) == len(test_list)
+print(check_list(numbers))
+
+#Punto 3
+numbers = [2, 3, 7, 9]
+def similar_type(seq):
+    iseq = iter(seq)
+    first_type = type(next(iseq))
+    return first_type if all((type(x) is first_type) for x in iseq) else False
+print(similar_type(numbers))
+
+#Punto 4
+i=4
+def provided_variable(variable):
+    if variable==str:
+        print("Si es valida")
+    elif variable==complex:
+        print("Si es valida")
+    elif variable==int:
+        print("Si es valida")
+    elif variable==float:
+        print("Si es valida")
+    elif variable==bool:
+        print("Si es valida")
+    elif variable==list:
+        print("Si es valida")
+    elif variable==tuple:
+        print("Si es valida")
+    elif variable==set:
+        print("Si es valida")
+print(provided_variable(i))
+
+#Punto 5
+countries= [
     {
         "name": "Afghanistan",
         "capital": "Kabul",
@@ -2825,10 +2671,26 @@ countires_data = [
         "currency": "Botswana pula"
     }
 ]
-for country in countires_data:
-    for key in country:
-        if key == "languages":
-            for languages in country["languages"]:
-                languages_st.add(languages)
-                languesges_lst.append(languages)
-print(len(languages_st))
+
+total_languages_initial = []
+for i in countries:
+    total_languages_initial.extend(i["languages"])
+print("Languages = ", len(set(total_languages_initial)))
+counts = {}
+for i in total_languages_initial:
+    counts[i] = counts.get(i, 0) + 1
+
+
+def sort_dict_by_value(d, reverse=False):
+    return dict(sorted(d.items(), key=lambda x: x[1], reverse=reverse))
+
+
+counts = sort_dict_by_value(counts, True)
+for i in list(counts.items())[:20]:
+    print(i)
+populations = {}
+for i in countries:
+    populations[i["name"]] = i["population"]
+populations = sort_dict_by_value(populations, True)
+for i in list(populations.items())[:20]:
+    print(i)
